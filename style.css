@@ -1,0 +1,44 @@
+body {
+    padding: 5px;
+    margin: 10px;
+  }
+
+h1 {
+  font-size: 35px;
+  color: #2980B9;
+}
+
+h2 {
+  font-size: 20px;
+  color: #484848;
+  margin-top: 35px;
+}
+
+h3 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.sidebar {
+    float: right;                  
+    width: 50%;
+    height: 750px;
+    background-color: #2980B9;
+  }
+
+.map {
+    height: inherit;
+    width: 100%;
+  }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+button {
+  position:absolute;
+  bottom: 5%;
+  left:13%;
+}

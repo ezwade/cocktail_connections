@@ -1,0 +1,63 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <title>Cocktail Connections</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin="" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./style.css">
+
+  </head>
+  <body>
+
+  <div class='sidebar'>
+    <h3>Liquor Stores in Atlanta</h3>
+        <!-- The div where we will inject our map -->
+    <div id='map' class='map'></div>
+  </div>
+
+  <h1>Cocktail Connections</h1>
+  
+  <h2>Select up to 3 ingredients to include in your cocktail:</h2>
+  <div class='dropdown'>
+    <select id="ingredients1" onchange="onSelect(this)">
+      </select>
+      </p>
+    <select id="ingredients2" onchange="onSelect2(this)">
+      </select>
+      </p>
+    <select id="ingredients3" onchange="onSelect3(this)">
+      </select>    
+  </div>
+  </p>  
+
+  <input type="button" onclick="resetSelections()"
+      value="Reset Selections" /> 
+
+  <h2>Drink Options Using Selected Ingredient(s):</h2>
+  <ul id="drinks">
+  </ul>
+  </p>
+
+  <a href="D3work/flare_2.html" target = "_blank"><button>Breakdown of drinks based on standard liquors</button></a>
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script type="text/javascript" src="./dropdowns_app.js"></script>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""></script>
+  <!-- API key -->
+  <script type="text/javascript" src="Map Visualization/config.js"></script>
+  <!-- JS -->
+  <script type="text/javascript" src="Map Visualization/logic.js"></script>
+
+  </body>
+
+</html>
